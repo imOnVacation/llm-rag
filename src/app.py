@@ -13,7 +13,8 @@ vectorstore = Chroma(
 
 retriever = vectorstore.as_retriever()
 
-prompt = hub.pull("rlm/rag-prompt")
+# prompt = hub.pull("rlm/rag-prompt")
+prompt = hub.pull("vinmask/cover-letterv2")
 
 llm = GoogleGenerativeAI(model="gemini-1.5-pro-latest",temperature=0)
 
